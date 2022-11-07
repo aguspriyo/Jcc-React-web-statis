@@ -6,7 +6,7 @@ export default function Profile(){
   return(
     <>
     <Navbar/>
-  <div className="container " style={{backgroundColor:"#f8f0f0 ", margin:" 150px", padding:"5px"}}>
+  <div className="container " style={{backgroundColor:"#f8f0f0 ", marginTop:" 150px",marginBottom:" 150px", padding:"5px"}}>
       <div className="col-md-4 col offset-4 text-center" style={{marginTop: "40px ",}}>
         <img src={profile} alt="" style={{width: "25%"}} />
         <h4>Agus Priyono</h4>
