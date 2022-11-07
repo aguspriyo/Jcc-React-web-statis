@@ -32,9 +32,10 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item ">
-                <button className="btn btn-secondary" id="cart">
-                  <img src={keranjang} style={{ width: "35px" }} alt="gambarCart" to="/keranjang" />
-                </button>
+              <Link to="/keranjang">
+               <button className="btn btn-secondary" id="cart">
+                  <img src={keranjang} style={{ width: "35px" }} alt="gambarCart"  />
+                </button></Link> 
               </li>
             </ul>
           </div>
