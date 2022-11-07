@@ -1,16 +1,15 @@
 import React from "react";
+import { BsPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import keranjang from "../../assets/cart.svg";
 import jatraf from "../../assets/jatraf white.png";
-
-
 
 export default function Navbar() {
   return (
     <header>
       <nav className="navbar navbar-expand-sm navbar-dark bg-secondary text-dark fixed-top" style={{ fontSize: " 18px" }}>
         <div className="container ">
-          <img  src={jatraf} style={{ width: "80px", height: "80px" }} alt="" />
+          <img src={jatraf} style={{ width: "80px", height: "80px" }} alt="" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -31,11 +30,17 @@ export default function Navbar() {
                   Login/Register
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/profile">
+                  <BsPersonFill />
+                </Link>
+              </li>
               <li className="nav-item ">
-              <Link to="/keranjang">
-               <button className="btn btn-secondary" id="cart">
-                  <img src={keranjang} style={{ width: "35px" }} alt="gambarCart"  />
-                </button></Link> 
+                <Link to="/keranjang">
+                  <button className="btn btn-secondary" id="cart">
+                    <img src={keranjang} style={{ width: "35px" }} alt="gambarCart" />
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
